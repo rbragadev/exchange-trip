@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+.next/
+out/
+
+# Environment
+.env
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Platform
+.DS_Store
+coverage/
+*.local
+
+# Prisma
+prisma/generated
+
+# Mobile
+.expo/
+web-build/
+android/
+ios/
+
+# Editors
+.vscode/
+.idea/

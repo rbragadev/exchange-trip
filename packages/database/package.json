@@ -1,0 +1,28 @@
+{
+  "name": "@exchange/database",
+  "version": "0.1.0",
+  "private": true,
+  "main": "prisma/schema.prisma",
+  "scripts": {
+    "lint": "echo \"No lint configured for database package\"",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "db:seed": "ts-node prisma/seed.ts",
+    "format": "prettier --write \"prisma/**/*.{ts,prisma}\"",
+    "generate": "prisma generate"
+  },
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.19.1"
+  },
+  "devDependencies": {
+    "prisma": "^5.19.1",
+    "typescript": "^5.8.2",
+    "ts-node": "^10.9.2",
+    "prettier": "^3.4.2",
+    "@typescript-eslint/eslint-plugin": "^8.8.0",
+    "@typescript-eslint/parser": "^8.8.0",
+    "eslint": "^9.15.0"
+  }
+}
